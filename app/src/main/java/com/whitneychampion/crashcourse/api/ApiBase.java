@@ -1,4 +1,4 @@
-package com.whitneychampion.crashcourse.model;
+package com.whitneychampion.crashcourse.api;
 
 import java.io.Serializable;
 

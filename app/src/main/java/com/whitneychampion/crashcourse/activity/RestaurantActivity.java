@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.whitneychampion.crashcourse.R;
 import com.whitneychampion.crashcourse.model.Restaurant;
@@ -32,7 +33,7 @@ public class RestaurantActivity extends Activity {
         TextView restaurant_address = (TextView) findViewById(R.id.restaurant_address);
         TextView restaurant_citystate = (TextView) findViewById(R.id.restaurant_citystate);
 
-        // enter restaurant data
+        // populate restaurant data
         restaurant_name.setText(restaurant.getName());
         restaurant_address.setText(restaurant.getAddress());
         restaurant_citystate.setText(restaurant.getCity() + ", " + restaurant.getState());
@@ -53,6 +54,7 @@ public class RestaurantActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            Toast.makeText(context,"Settings",Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);

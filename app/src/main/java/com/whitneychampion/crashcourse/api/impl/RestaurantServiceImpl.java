@@ -22,7 +22,7 @@ public class RestaurantServiceImpl implements RestaurantService {
             throws ApiException {
 
         //try to make call
-        String url = Constants.API_URL + ApiHelper.GET_RESTAURANTS;
+        String url = Constants.API_URL + Constants.GET_RESTAURANTS;
         try {
             ApiHelper.get(url, context, RestaurantList.class, listener, null);
         } catch (Exception e) {

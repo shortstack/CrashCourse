@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.whitneychampion.crashcourse.R;
 import com.whitneychampion.crashcourse.adapter.RestaurantAdapter;
@@ -15,7 +16,7 @@ import com.whitneychampion.crashcourse.api.ApiException;
 import com.whitneychampion.crashcourse.api.RestaurantService;
 import com.whitneychampion.crashcourse.api.impl.RestaurantServiceImpl;
 import com.whitneychampion.crashcourse.listener.AsyncTaskCompleteListener;
-import com.whitneychampion.crashcourse.model.ApiBase;
+import com.whitneychampion.crashcourse.api.ApiBase;
 import com.whitneychampion.crashcourse.model.RestaurantList;
 import com.whitneychampion.crashcourse.util.ApiResponseUtil;
 
@@ -84,6 +85,7 @@ public class ListRestaurantsActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            Toast.makeText(context, "Settings", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);

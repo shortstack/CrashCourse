@@ -1,7 +1,5 @@
 package com.whitneychampion.crashcourse.api;
 
-import com.whitneychampion.crashcourse.model.ApiBase;
-
 /**
  * Created by Whitney Champion on 8/23/14.
  */

@@ -2,7 +2,7 @@ package com.whitneychampion.crashcourse.util;
 
 import com.whitneychampion.crashcourse.api.ApiError;
 import com.whitneychampion.crashcourse.api.ApiException;
-import com.whitneychampion.crashcourse.model.ApiBase;
+import com.whitneychampion.crashcourse.api.ApiBase;
 
 /**
  * Created by Whitney Champion on 8/23/14.
